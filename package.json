@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "cypress": "cypress run",
+    "cy:parallel": "cypress-parallel -s cypress run -t 2 -d cypress/e2e",
+    "cy:parallel:spec": "cypress-parallel -s cypress run --spec",
+    "cy:parallel:all": "cypress-parallel -s cypress run --spec \"cypress/e2e/**/*.cy.ts\" -t 4",
+    "cy:parallel:all:fast": "cypress-parallel -s cypress run --spec \"cypress/e2e/**/*.cy.ts\" -t 8"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^5.0.0",
+    "@types/node": "^24.5.2",
+    "cypress": "^15.6.0",
+    "cypress-parallel": "^0.15.0",
+    "typescript": "^5.9.2"
+  }
+}

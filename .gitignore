@@ -1,0 +1,6 @@
+node_modules/
+multi-reporter-config.json
+cypress/videos/
+cypress/screenshots/
+cypress/parallel-weights.json
+runner-results/
