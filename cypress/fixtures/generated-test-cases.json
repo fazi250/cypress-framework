@@ -1,0 +1,92 @@
+{
+  "TEAM-12300": {
+    "id": "TEAM-12300",
+    "url": "https://www.nrsforu.com/iApp/rsc/login.x",
+    "description": "Verify login with valid credentials",
+    "testSteps": [
+      "Navigate to login page",
+      "Enter username",
+      "Enter password",
+      "Click login button",
+      "Verify result"
+    ],
+    "testData": {
+      "username": "testuser1",
+      "password": "Password123!",
+      "email": "test0@example.com",
+      "expectedResult": "success"
+    }
+  },
+  "TEAM-12301": {
+    "id": "TEAM-12301",
+    "url": "https://www.nrsforu.com/iApp/rsc/login.x",
+    "description": "Verify login with invalid credentials",
+    "testSteps": [
+      "Navigate to login page",
+      "Enter username",
+      "Enter password",
+      "Click login button",
+      "Verify result"
+    ],
+    "testData": {
+      "username": "admin@test.com",
+      "password": "wrongpass",
+      "email": "test1@example.com",
+      "expectedResult": "error"
+    }
+  },
+  "TEAM-12302": {
+    "id": "TEAM-12302",
+    "url": "https://www.nrsforu.com/iApp/rsc/login.x",
+    "description": "Verify login with empty username",
+    "testSteps": [
+      "Navigate to login page",
+      "Enter username",
+      "Enter password",
+      "Click login button",
+      "Verify result"
+    ],
+    "testData": {
+      "username": "john.doe",
+      "password": "",
+      "email": "test2@example.com",
+      "expectedResult": "validation_error"
+    }
+  },
+  "TEAM-12303": {
+    "id": "TEAM-12303",
+    "url": "https://www.nrsforu.com/iApp/rsc/login.x",
+    "description": "Verify login with empty password",
+    "testSteps": [
+      "Navigate to login page",
+      "Enter username",
+      "Enter password",
+      "Click login button",
+      "Verify result"
+    ],
+    "testData": {
+      "username": "invalid_user",
+      "password": "test@123",
+      "email": "test3@example.com",
+      "expectedResult": "success"
+    }
+  },
+  "TEAM-12304": {
+    "id": "TEAM-12304",
+    "url": "https://www.nrsforu.com/iApp/rsc/login.x",
+    "description": "Verify login with special characters",
+    "testSteps": [
+      "Navigate to login page",
+      "Enter username",
+      "Enter password",
+      "Click login button",
+      "Verify result"
+    ],
+    "testData": {
+      "username": "",
+      "password": "12345",
+      "email": "test4@example.com",
+      "expectedResult": "error"
+    }
+  }
+}
