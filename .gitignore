@@ -1,0 +1,8 @@
+node_modules/
+multi-reporter-config.json
+cypress/videos/
+cypress/screenshots/
+cypress/parallel-weights.json
+runner-results/
+allure-results/
+free-otp-api/node_modules/
